@@ -1,0 +1,37 @@
+# backend
+migrations/
+__pycache__/
+.venv/
+/.vscode
+*.sqlite3
+*.pcy
+db_settings.py
+
+# nginx key
+*.pem
+
+# frontend
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# static
+/static
+/django-static
+
+# enviroment
+# you need to add next files in gitignore
+# /.env
+# /.env.dev
+# /.env.prod.proxy-companion
+# /backend.env.prod
+# /frontend.env.prod

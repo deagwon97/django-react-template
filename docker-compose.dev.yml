@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+
+  backend:
+    container_name: backend
+    restart: always
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    volumes:
+      - ./backend:/workdir/backend
+    command: bash -c "cd ./backend && python -m pip install -r requirements.txt & python manage.py runserver"
+    ports:
+      - 8000:8000
+    env_file:
+      - ./.env.dev
+
+  redis:
+    image: redis
+    restart: always
+    container_name: redis
+    expose:
+      - 6379
+    command: redis-server
+    healthcheck:
+      test: 'redis-cli -h 127.0.0.1 ping'
+      interval: 3s
+      timeout: 1s
+      retries: 5
+
+  celery:
+    container_name: celery
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    volumes:
+      - ./backend:/workdir/backend
+    command: bash -c "cd ./backend && python -m pip install -r requirements.txt && celery -A backend worker -l info"
+    volumes:
+      - ./backend:/workdir/backend
+    env_file:
+      - ./.env.dev
+    depends_on:
+      - backend
+      - redis

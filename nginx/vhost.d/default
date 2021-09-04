@@ -1,0 +1,9 @@
+location /django_static/ {
+    alias /workdir/backend/django_static/;
+    add_header Access-Control-Allow-Origin *;
+}
+
+location /django_media/ {
+    alias /workdir/backend/django_media/;
+    add_header Access-Control-Allow-Origin *;
+}
