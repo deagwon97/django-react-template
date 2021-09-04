@@ -7,25 +7,22 @@
 3. Implement and automate SSL authentication tasks using the nginxproxy/acme-companion and nginxproxy/nginx-proxy containers.
 
 - Backend Framework
-<center>
-<img src="https://img.shields.io/badge/Dajngo-092E20?style=flat-square&logo=django&logoColor=white"/></a>
-<img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=Celery&logoColor=white"/></a><img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=Redis&logoColor=white"/></a> 
-</center>
+<p align="center"><img src="https://img.shields.io/badge/Dajngo-092E20?style=flat-square&logo=django&logoColor=white"/></a><img src="https://img.shields.io/badge/Celery-37814A?style=flat-square&logo=Celery&logoColor=white"/></a><img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=Redis&logoColor=white"/></a></p>
 
 - Frontend Framework (Templete from: https://github.com/devias-io/material-kit-react)
-<center>
+<p align="center">
 <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=React&logoColor=black"/></a>
-</center>
+</p>
 
 - Proxy Server & SSL Certificate Authorities
-<center>
+<p align="center">
 <img src="https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=Nginx&logoColor=white"/></a><img src="https://img.shields.io/badge/Let's Encrypt-003A70?style=flat-square&logo=letsencrypt&logoColor=white"/></a>
-</center>
+</p>
 
 - Tool for defining and running multi-container
-<center>
+<p align="center">
 <img src="https://img.shields.io/badge/Docker compose-2496ED?style=flat-square&logo=Docker&logoColor=white"/></a>
-</center>
+</p>
 
 ## > docker-compose.prod.yml
 
