@@ -1,6 +1,6 @@
 # Django-React-template
 
-## > Cool template for on premise web server.
+## > Cool template for Frontend to Backend web application.
 
 1. Develop web applications using Django-REST api and React.
 2. Implement asynchronous operation in django using Redis and Celery.
