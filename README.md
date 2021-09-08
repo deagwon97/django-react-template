@@ -127,7 +127,7 @@ volumes:
   acme:
 ```
 
-## Pre Requirements
+## Prerequisites
 
 - ubuntu 20.04
 - python 3.8
